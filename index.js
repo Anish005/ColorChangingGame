@@ -1,17 +1,19 @@
-//task1 -  select all the buttons of the html element in a variable named buttons
+//task -  select all the buttons of the html element in a variable named buttons
 
 
-const buttons = document.querySelectorAll('.button');
 
-//task2 - select the body element to change its background color
-const body = document.querySelector('body');
+
+//task - select the body element to change its background color
+
 
 buttons.forEach(function (button) {
+  /*learning ----> the use of addEventlistener that is on clicking on the required buttons the
+  color changing event must happen you need to write your logic inside this eventListener*/
   
   button.addEventListener('click', function (e) {
-    // task3 - should console log the target id to show the name of the button is being clicked on
+    
     console.log(e.target.id);
-    //task4 - write the required logic to style the  background color of the body
+    //task - write the required logic to style the  background color of the body
 
   });
 });
